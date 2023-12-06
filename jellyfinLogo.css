@@ -1,0 +1,500 @@
+@import url('https://prayag17.github.io/Jellyfin-Icons/Sharp.css');
+@import url(https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/logo.css);
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+    background: 0 0;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+    background: 0 0;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.headerTabs.sectionTabs {
+    text-size-adjust: 110%;
+    font-size: 110%
+}
+
+.pageTitle {
+    margin-top: auto;
+    margin-bottom: auto
+}
+
+.emby-tab-button {
+    padding: 1.75em 1.7em
+}
+
+.nextUpSection.verticalSection.detailVerticalSection>div>div>div>div.cardScalable>button {
+    filter: blur(10px)
+}
+
+div.listItem>div>div>button:nth-child(1) {
+    transition: none !important;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px)
+}
+
+div.listItem>div>div>button:nth-child(1):hover {
+    transition: none !important;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px)
+}
+
+#childrenContent>div>div>div>div.listItemImage.listItemImage large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast>button {
+    transition: none !important;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px)
+}
+
+#childrenContent>div>div>div>div.listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast>button:hover {
+    border-radius: 0;
+    height: 85%;
+    width: 85%;
+    backdrop-filter: blur(20px)
+}
+
+@supports not ((backdrop-filter:blur(10px)) or (--webkit-backdrop-filter:blur(10px))) {
+    #childrenContent>div>div>div>div.listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast {
+        filter: blur(10px)
+    }
+}
+
+@supports not ((backdrop-filter:blur(10px)) or (--webkit-backdrop-filter:blur(10px))) {
+    #itemDetailPage>div.detailPageWrapperContainer>div.detailPageSecondaryContainer>div.detailPageContent>div.verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container>div.padded-top-focusscale.padded-bottom-focusscale.emby-scroller>.itemsContainer>.card.overflowBackdropCard.card-hoverable.card-withuserdata>div>.cardScalable {
+        background: rgba(0, 0, 0, .5);
+        filter: blur(10px);
+        transition: none !important;
+        filter: blur(10px)
+    }
+}
+
+#itemDetailPage>div.detailPageWrapperContainer>div.detailPageSecondaryContainer>div.detailPageContent>div.verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container>div.padded-top-focusscale.padded-bottom-focusscale.emby-scroller>.itemsContainer>.card.overflowBackdropCard.card-hoverable.card-withuserdata>div>.cardScalable>button {
+    border-radius: 0;
+    height: 0;
+    width: 0;
+    background: rgba(0, 0, 0, .5);
+    filter: blur(10px);
+    transition: none !important;
+    backdrop-filter: blur(10px)
+}
+
+.cardScalable {
+    overflow: hidden
+}
+
+.mainDrawer {
+    background: transparent;
+    backdrop-filter: blur(20px)
+}
+
+/*Dynamic Poster effect-flash-rotate*/
+.card:hover .cardImageContainer {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+    -webkit-transform: rotate(5deg) scale(1.2);
+    transform: rotate(5deg) scale(1.2)
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.cardImageContainer {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out
+}
+
+#itemDetailPage .vertical-list {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 0 6px !important;
+    height: fit-content;
+    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    margin: -6px;
+    width: calc(100% - 6px)
+}
+
+.listItem-withContentWrapper:hover .listItemImageButton.itemAction.paper-icon-button-light {
+    opacity: 100%
+}
+
+@media (max-width:901px) {
+    #itemDetailPage .vertical-list {
+        grid-template-columns: 30% 30%
+    }
+}
+
+.listItem-withContentWrapper {
+    transition: none;
+    height: fit-content;
+    max-width: 100%;
+    margin: 6px;
+    border-radius: var(--rounding);
+    overflow: hidden;
+    padding: 0;
+    overflow: hidden
+}
+
+.listItem-withContentWrapper:hover {
+    background: transparent
+}
+
+.listItem-content {
+    height: 100%
+}
+
+.listItem-content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%
+}
+
+.listItemImage.listItemImage-large.itemAction.lazy {
+    height: 14rem;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    top: 0;
+    left: 0
+}
+
+.layout-mobile #itemDetailPage .vertical-list {
+    grid-template-columns: 100%
+}
+
+.secondary.listItem-overview.listItemBodyText {
+    height: fit-content
+}
+
+.layout-mobile .listItem-bottomoverview {
+    padding: 0 10px
+}
+
+.listItemBody.itemAction {
+    padding: 0 5px
+}
+
+.listItemImageButton.itemAction.paper-icon-button-light {
+    opacity: 0;
+    color: var(--accent);
+    transition: all .2s
+}
+
+.layout-mobile .listItemImageButton.itemAction.paper-icon-button-light {
+    opacity: 100% !important
+}
+
+.headerTabs.sectionTabs {
+    text-size-adjust: 110%;
+    font-size: 110%
+}
+
+.pageTitle {
+    margin-top: auto;
+    margin-bottom: auto
+}
+
+.emby-tab-button {
+    padding: 1.75em 1.7em
+}
+
+.nextUpSection.verticalSection.detailVerticalSection>div>div>div>div.cardScalable>button {
+    filter: blur(10px)
+}
+
+div.listItem>div>div>button:nth-child(1) {
+    transition: none !important;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px)
+}
+
+div.listItem>div>div>button:nth-child(1):hover {
+    transition: none !important;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px)
+}
+
+#childrenContent>div>div>div>div.listItemImage.listItemImage large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast>button {
+    transition: none !important;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px)
+}
+
+#childrenContent>div>div>div>div.listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast>button:hover {
+    border-radius: 0;
+    height: 85%;
+    width: 85%;
+    backdrop-filter: blur(20px)
+}
+
+@supports not ((backdrop-filter:blur(10px)) or (--webkit-backdrop-filter:blur(10px))) {
+    #childrenContent>div>div>div>div.listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast {
+        filter: blur(10px)
+    }
+}
+
+@supports not ((backdrop-filter:blur(10px)) or (--webkit-backdrop-filter:blur(10px))) {
+    #itemDetailPage>div.detailPageWrapperContainer>div.detailPageSecondaryContainer>div.detailPageContent>div.verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container>div.padded-top-focusscale.padded-bottom-focusscale.emby-scroller>.itemsContainer>.card.overflowBackdropCard.card-hoverable.card-withuserdata>div>.cardScalable {
+        background: rgba(0, 0, 0, .5);
+        filter: blur(10px);
+        transition: none !important;
+        filter: blur(10px)
+    }
+}
+
+#itemDetailPage>div.detailPageWrapperContainer>div.detailPageSecondaryContainer>div.detailPageContent>div.verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container>div.padded-top-focusscale.padded-bottom-focusscale.emby-scroller>.itemsContainer>.card.overflowBackdropCard.card-hoverable.card-withuserdata>div>.cardScalable>button {
+    border-radius: 0;
+    height: 0;
+    width: 0;
+    background: rgba(0, 0, 0, .5);
+    filter: blur(10px);
+    transition: none !important;
+    backdrop-filter: blur(10px)
+}
+
+.cardScalable {
+    overflow: hidden
+}
+
+.mainDrawer {
+    background: transparent;
+    backdrop-filter: blur(20px)
+}
+
+.raised {
+    color: #089099
+}
+
+.raised {
+    background-color: #303030
+}
+
+.paper-icon-button-light {
+    color: #ff8787;
+    transition: all .2s
+}
+
+.paper-icon-button-light {
+    background-color: #000000 !important;
+    transition: all .2s
+}
+
+.paper-icon-button-light:hover {
+    color: #980000 !important
+}
+
+.paper-icon-button-light:hover {
+    background-color: #a4db33 !important
+}
+
+.backgroundContainer.withBackdrop {
+    background-color: rgba(255, 40, 60, .35)
+}
+
+h1 {
+    font-size: 2em
+}
+
+:root {
+    --btn-rounding: 0;
+    --rounding: 0
+}
+
+.missingIndicator,
+.unairedIndicator {
+    border-radius: var(--rounding)
+}
+
+.formDialogHeader {
+    border-top-left-radius: var(--rounding);
+    border-top-right-radius: var(--rounding)
+}
+
+.formDialogFooter {
+    border-bottom-left-radius: var(--rounding);
+    border-bottom-right-radius: var(--rounding)
+}
+
+.cardOverlayContainer {
+    border-radius: var(--rounding) !important;
+    background: rgba(0, 0, 0, 0) !important
+}
+
+.primaryImageWrapper>img,
+.toast,
+.paperList,
+.cardContent,
+.sessionNowPlayingInnerContent,
+.listItem:hover,
+.cardImage,
+.fab,
+.raised,
+.multiSelectCheckboxOutline,
+.itemSelectionPanel,
+.cardContent-button,
+.cardContent-shadow,
+.itemDetailImage,
+.cardOverlayButton-hover,
+.cardImageContainer,
+.cardPadder,
+.listItemImage,
+.listItemImageButton,
+.listItemButton,
+.headerButton,
+.paper-icon-button-light,
+.innerCardFooter,
+.blurhash-canvas,
+.dialog,
+.countIndicator,
+.playedIndicator,
+.listItemIcon,
+.listItem-border,
+.button-flat,
+.visualCardBox,
+.checkboxOutline,
+.emby-select-withcolor,
+.chapterThumbTextContainer,
+.chapterThumbContainer,
+.chapterThumb,
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor,
+.nowPlayingPageImage,
+.upNextDialog-poster-img,
+.upNextContainer,
+.cardOverlayButtonIcon {
+    border-radius: var(--rounding) !important
+}
+
+.osdPoster img {
+    border-radius: var(--rounding);
+    border: none
+}
+
+.mdl-slider::-moz-range-thumb {
+    border-radius: var(--rounding)
+}
+
+.mdl-slider::-ms-thumb {
+    border-radius: var(--rounding)
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    border-radius: var(--rounding)
+}
+
+div[data-role='controlgroup'] a[data-role='button']:first-child {
+    border-bottom-left-radius: var(--rounding);
+    border-top-left-radius: var(--rounding)
+}
+
+div[data-role='controlgroup'] a[data-role='button']:last-child {
+    border-bottom-right-radius: var(--rounding);
+    border-top-right-radius: var(--rounding)
+}
+
+#dashboardPage .cardContent,
+#dashboardPage .sessionNowPlayingInnerContent {
+    border-radius: var(--rounding) var(--rounding) 0 0 !important
+}
+
+#divVirtualFolders .cardImageContainer,
+#divVirtualFolders .cardContent {
+    border-radius: var(--rounding) var(--rounding) 0 0 !important
+}
+
+#userProfilesPage .cardImage,
+#userProfilesPage .cardContent {
+    border-radius: var(--rounding) var(--rounding) 0 0 !important
+}
+
+#user_usage_report_table,
+.detailTable {
+    border-radius: var(--rounding)
+}
+
+progress {
+    border-radius: var(--rounding)
+}
+
+progress::-webkit-progress-bar {
+    border-radius: var(--rounding)
+}
+
+progress::-moz-progress-bar {
+    border-radius: var(--rounding)
+}
+
+progress::-webkit-progress-value {
+    border-radius: var(--rounding)
+}
+
+.taskProgressOuter,
+.taskProgressInner {
+    border-radius: var(--rounding) !important
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: var(--rounding)
+}
+
+.paper-icon-button-light {
+    border-radius: var(--btn-rounding) !important
+}
+
+:root {
+    --bgblur: blur(1px)
+}
+
+.backdropImage {
+    filter: var(--bgblur)
+}
+
+html {
+    font-family: 'Alatsi', sans-serif
+}
+
+body,
+h1,
+h2,
+h3 {
+    font-family: 'Alatsi', sans-serif
+}
